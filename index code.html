@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kingdom Defender</title>
+
+    <!-- Connects the CSS file -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Lato font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <h1>🏰 KINGDOM DEFENDER 🏰</h1>
+
+        <p class="instructions">
+            Choose a defender to protect the kingdom!
+        </p>
+
+        <!-- Game information -->
+        <div class="game-info">
+
+            <h2>
+                Your Choice:
+                <span id="user-choice">-</span>
+            </h2>
+
+            <h2>
+                Computer Choice:
+                <span id="computer-choice">-</span>
+            </h2>
+
+            <h2 id="result" aria-live="polite">
+                Choose a defender to battle!
+            </h2>
+
+        </div>
+
+        <!-- Score -->
+        <div class="score-board">
+
+            <div>
+                <h2>Your Score</h2>
+                <p id="player-score">0</p>
+            </div>
+
+            <div>
+                <h2>Computer Score</h2>
+                <p id="computer-score">0</p>
+            </div>
+
+        </div>
+
+        <p class="goal">
+            First to 5 points wins!
+        </p>
+
+        <!-- Defender choices -->
+        <div class="buttons">
+
+            <button
+                id="knight"
+                class="choice"
+                aria-label="Choose Knight"
+                title="Knight">
+                <span class="sr-only">Knight</span>
+            </button>
+
+            <button
+                id="archer"
+                class="choice"
+                aria-label="Choose Archer"
+                title="Archer">
+                <span class="sr-only">Archer</span>
+            </button>
+
+            <button
+                id="wizard"
+                class="choice"
+                aria-label="Choose Wizard"
+                title="Wizard">
+                <span class="sr-only">Wizard</span>
+            </button>
+
+            <button
+                id="dragon"
+                class="choice"
+                aria-label="Choose Dragon"
+                title="Dragon">
+                <span class="sr-only">Dragon</span>
+            </button>
+
+            <button
+                id="king"
+                class="choice"
+                aria-label="Choose King"
+                title="King">
+                <span class="sr-only">King</span>
+            </button>
+
+        </div>
+
+        <!-- Game controls -->
+        <div class="controls">
+
+            <button id="reset-button" class="control-button">
+                Reset Game
+            </button>
+
+            <a href="rules.html" class="rules-btn">
+                How To Play
+            </a>
+
+        </div>
+
+        <!-- Like button -->
+        <div class="like-section">
+
+            <button id="like-button" class="like-button">
+                👍 Like Kingdom Defender
+            </button>
+
+            <p>
+                Likes: <span id="like-count">0</span>
+            </p>
+
+        </div>
+
+        <!-- High score -->
+        <section class="leaderboard">
+
+            <h2>🏆 Leaderboard</h2>
+
+            <p>
+                Your best score:
+                <strong id="high-score">0</strong>
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- Connects JavaScript -->
+    <script src="scripts/app.js"></script>
+
+</body>
+
+</html> 
